@@ -189,7 +189,7 @@ main,.site-footer{margin-left:84px}
  .hero{min-height:820px;height:92svh}
  .hero-intro{top:172px;left:40px}
  .hero h1{font-size:clamp(60px,10vw,95px)}
- .hero-car-stage{top:375px;left:3%;width:123%}
+ .hero-car-stage{top:385px;left:-1%;width:112%}
  .hero-bottom{left:40px;bottom:104px}
  .hero-phase{display:none}
  .scroll-cue{left:40px}
@@ -221,7 +221,7 @@ main,.site-footer{margin-left:84px}
  .hero h1{font-size:clamp(51px,13.5vw,83px);line-height:.9;margin:20px 0}
  .hero h1 em{margin-left:2%}
  .hero-deck{max-width:320px;font-size:13px}
- .hero-car-stage{top:415px;left:-38%;width:186%;transform:rotate(-3deg)}
+ .hero-car-stage{top:430px;left:-25%;width:150%;transform:rotate(-3deg)}
  .echo{width:410px;height:410px;top:390px;right:-195px}
  .echo-two{width:300px;height:300px;top:445px;right:-145px}
  .echo-three{width:185px;height:185px;top:508px;right:-90px}
@@ -261,7 +261,7 @@ main,.site-footer{margin-left:84px}
 }
 @media(max-width:370px){
  .hero h1{font-size:49px}
- .hero-car-stage{top:407px;left:-44%;width:200%}
+ .hero-car-stage{top:427px;left:-25%;width:150%}
  .hero{min-height:865px}
  .hero-bottom{bottom:98px}
  .chapter-eyebrow{font-size:8px}
