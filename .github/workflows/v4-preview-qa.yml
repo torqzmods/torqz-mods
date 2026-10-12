@@ -1,0 +1,34 @@
+name: V4 Night Circuit Preview QA
+on:
+  push:
+    branches: [v4-night-circuit]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  preview-browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-audit --no-fund
+      - run: npx playwright install --with-deps chromium
+      - name: Serve local V4 staging preview
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/torqz-v4-preview.log 2>&1 &
+          sleep 2
+      - name: Verify V4 interactions and responsive sizes
+        run: npx playwright test --config playwright.v4.config.js
+      - name: Capture eight responsive visual screenshots
+        if: always()
+        run: node tests/v4-capture.mjs
+      - name: Upload screenshots and report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: torqz-night-circuit-v4-first-prototype
+          path: v4-preview-qa/
+          if-no-files-found: warn
