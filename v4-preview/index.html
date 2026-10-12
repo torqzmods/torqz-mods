@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en" data-v4-preview>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Torqz Mods V4 — Night Circuit design preview. An independent BeamNG.drive creator brand.">
+  <title>Night Circuit V4 Preview — Torqz Mods</title>
+  <script>
+    try {
+      const theme = localStorage.getItem("torqz-theme-v3");
+      document.documentElement.dataset.theme = ["carbon","copper","violet"].includes(theme) ? theme : "carbon";
+    } catch(_) { document.documentElement.dataset.theme = "carbon"; }
+  </script>
+  <link rel="preload" href="../assets/brand/torqz-logo.webp" as="image" type="image/webp">
+  <link rel="stylesheet" href="night-circuit.css">
+  <script type="module" src="night-circuit.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="preview-banner" role="status"><span class="pulse" aria-hidden="true"></span> NIGHT CIRCUIT / V4 WORK-IN-PROGRESS PREVIEW <span class="preview-hint">— NOT THE LIVE WEBSITE</span></div>
+
+  <header class="site-header" id="top">
+    <a class="brand-link" href="#top" aria-label="Torqz Mods — back to top"><span class="header-logo-mark" aria-hidden="true"></span><span class="brand-name">TORQZ <small>MODS</small></span></a>
+    <nav class="site-links" aria-label="Primary navigation"><a href="#project">Project 01</a><a href="#build">The Build</a><a href="#journal">Updates</a><a href="#about">About</a></nav>
+    <div class="header-actions"><button class="theme-button" type="button" data-theme-button aria-label="Change color theme" aria-expanded="false" aria-controls="theme-panel">◐ <span>Theme</span></button><button class="menu-button" type="button" data-menu-button aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button><a class="header-link" href="../support.html">Get Help <span aria-hidden="true">↗</span></a></div>
+    <div class="theme-panel" id="theme-panel" data-theme-panel hidden role="group" aria-label="Color theme options">
+      <p>YOUR NIGHT CIRCUIT</p><button type="button" data-theme-choice="carbon"><span class="swatch tide"></span>Deep Tide</button><button type="button" data-theme-choice="copper"><span class="swatch alloy"></span>Alloy Dusk</button><button type="button" data-theme-choice="violet"><span class="swatch ultra"></span>Ultraviolet Night</button>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" data-mobile-nav hidden aria-label="Mobile navigation"><a href="#project">Project 01 <span>01</span></a><a href="#experience">The Idea <span>02</span></a><a href="#build">The Build <span>03</span></a><a href="#journal">Updates <span>04</span></a><a href="#about">About <span>05</span></a><a href="../support.html">Support ↗</a></nav>
+  </header>
+
+  <aside class="chapter-rail" aria-label="Jump to homepage chapters">
+    <span class="rail-wordmark">T / 04</span><span class="rail-title">INDEPENDENT MOTION STUDIO</span>
+    <nav class="rail-index" aria-label="Chapter navigation">
+      <a href="#arrival" data-rail="arrival" aria-current="true"><span>00</span><i></i></a>
+      <a href="#project" data-rail="project"><span>01</span><i></i></a>
+      <a href="#experience" data-rail="experience"><span>02</span><i></i></a>
+      <a href="#build" data-rail="build"><span>03</span><i></i></a>
+      <a href="#journal" data-rail="journal"><span>04</span><i></i></a>
+      <a href="#about" data-rail="about"><span>05</span><i></i></a>
+    </nav><span class="rail-footer">TORQZ / 2026</span>
+  </aside>
+
+  <main id="main">
+    <section class="chapter hero" id="arrival" data-chapter>
+      <div class="hero-atmosphere" aria-hidden="true"><div class="echo echo-one"></div><div class="echo echo-two"></div><div class="echo echo-three"></div><div class="hero-grid-lines"></div></div>
+      <div class="hero-intro">
+        <p class="eyebrow"><span class="dot"></span> TORQZ MODS / BEAMNG.DRIVE / INDEPENDENT CREATOR</p>
+        <h1><span>THE DRIVE</span><em>CONTINUES<span class="period">.</span></em></h1>
+        <p class="hero-deck">Build your car. Keep its story. Original BeamNG.drive projects, built one stage at a time.</p>
+      </div>
+      <div class="hero-car-stage" data-hero-stage>
+        <svg class="concept-vehicle" viewBox="0 0 1280 545" role="img" aria-labelledby="vehicle-title" xmlns="http://www.w3.org/2000/svg">
+          <title id="vehicle-title">Conceptual illustrated sports sedan emerging from a nighttime workshop; this is concept artwork, not gameplay.</title>
+          <defs>
+            <linearGradient id="car-metal" x1="260" y1="160" x2="920" y2="430" gradientUnits="userSpaceOnUse"><stop stop-color="#111c1f"/><stop offset=".28" stop-color="#7c9e9c"/><stop offset=".48" stop-color="#344a4b"/><stop offset=".68" stop-color="#1a2c2f"/><stop offset="1" stop-color="#0b1417"/></linearGradient>
+            <linearGradient id="car-glass" x1="350" y1="210" x2="860" y2="340" gradientUnits="userSpaceOnUse"><stop stop-color="#a2c6c2" stop-opacity=".48"/><stop offset=".42" stop-color="#061113" stop-opacity=".96"/><stop offset="1" stop-color="#e1f5ee" stop-opacity=".2"/></linearGradient>
+            <linearGradient id="body-shine" x1="150" y1="290" x2="1140" y2="330" gradientUnits="userSpaceOnUse"><stop stop-color="#d7f3df" stop-opacity="0"/><stop offset=".3" stop-color="#c6f3e6" stop-opacity=".56"/><stop offset=".62" stop-color="#d7f3df" stop-opacity=".22"/><stop offset="1" stop-color="#c6f3e6" stop-opacity="0"/></linearGradient>
+            <radialGradient id="pool"><stop stop-color="#d8b487" stop-opacity=".28"/><stop offset="1" stop-color="#d8b487" stop-opacity="0"/></radialGradient>
+            <filter id="pool-blur"><feGaussianBlur stdDeviation="24"/></filter>
+          </defs>
+          <ellipse cx="680" cy="474" rx="530" ry="51" fill="url(#pool)" filter="url(#pool-blur)"/>
+          <path d="M89 358L121 327L183 316L274 284L347 212Q383 173 451 168L736 160Q787 160 831 190L964 284L1071 306L1164 331L1187 358L1176 397L1117 407L1049 408Q1049 351 1007 334Q956 315 918 345Q892 366 887 409H392Q392 349 340 330Q289 308 250 344Q220 369 219 410L152 405L98 390Z" fill="url(#car-metal)" stroke="#93b6ad" stroke-width="2.5"/>
+          <path d="M360 220Q396 190 456 186L718 179Q763 181 798 209L920 289L274 296Z" fill="url(#car-glass)" stroke="#b5c9c3" stroke-width="2.7"/>
+          <path d="M563 182L553 294M802 213L850 295" stroke="#b5c9c3" stroke-width="4" opacity=".75"/>
+          <path d="M214 314L1064 320" stroke="url(#body-shine)" stroke-width="6" opacity=".9"/>
+          <path d="M113 350L272 330M845 339L1148 355M380 404H889" stroke="#719790" stroke-width="3" opacity=".7"/>
+          <g><circle cx="306" cy="406" r="87" fill="#070b0e" stroke="#718d89" stroke-width="5"/><circle cx="306" cy="406" r="62" fill="#1a2528" stroke="#778e90" stroke-width="3"/><circle cx="306" cy="406" r="40" fill="#12181c" stroke="#98b1aa" stroke-width="9" stroke-dasharray="8 13"/><circle cx="306" cy="406" r="16" fill="#a3bcb4"/></g>
+          <g><circle cx="966" cy="406" r="87" fill="#070b0e" stroke="#718d89" stroke-width="5"/><circle cx="966" cy="406" r="62" fill="#1a2528" stroke="#778e90" stroke-width="3"/><circle cx="966" cy="406" r="40" fill="#12181c" stroke="#98b1aa" stroke-width="9" stroke-dasharray="8 13"/><circle cx="966" cy="406" r="16" fill="#a3bcb4"/></g>
+          <path d="M1174 353L1130 344L1115 351L1118 365L1178 373Z" fill="#dd996d"/><path d="M101 352L156 335L165 344L152 357L97 365Z" fill="#d6f2e9"/>
+          <path d="M220 305H1029" stroke="#b0d6c8" stroke-opacity=".26" stroke-width="2"/>
+        </svg>
+      </div>
+      <div class="hero-bottom">
+        <div class="hero-bottom-actions"><a class="button-primary" href="#project">Explore Project 01 <span aria-hidden="true">↗</span></a><a class="button-quiet" href="#journal">Read the Build Journal <span aria-hidden="true">↗</span></a></div>
+        <div class="hero-phase"><span class="phase-number">02</span><span><strong>VEHICLE DATA</strong><small>IN DEVELOPMENT · TORQZ GARAGE</small></span></div>
+      </div>
+      <span class="concept-caption">ORIGINAL CONCEPT ART · NOT BEAMNG GAMEPLAY FOOTAGE</span>
+      <a class="scroll-cue" href="#project">SCROLL TO THE BUILD <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section class="chapter project" id="project" data-chapter>
+      <div class="chapter-shell">
+        <div class="chapter-eyebrow"><span>01 / THE PROJECT</span><span>PROJECT 01 · IN DEVELOPMENT</span></div>
+        <div class="project-headline"><span class="micro-label">THE FIRST TORQZ PROJECT</span><h2>TORQZ<br><em>GARAGE.</em></h2></div>
+        <div class="project-layout">
+          <div class="project-statement"><p>Cars deserve more than a single session.</p><p class="project-description">We're building the foundations of persistent vehicle ownership for BeamNG.drive—starting with vehicle data and growing toward a garage with history.</p><div class="project-tags"><span>PERSISTENT OWNERSHIP / PLANNED</span><span>VEHICLE DATA / IN PROGRESS</span><span>RELEASE / NOT AVAILABLE</span></div><a class="inline-link" href="../mods/project-01.html">Full Torqz Garage Project <span>↗</span></a></div>
+          <div class="project-motif" aria-hidden="true"><div class="motif-outer"></div><div class="motif-inner"></div><span>01</span><small>BUILT TO REMEMBER</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter experience" id="experience" data-chapter>
+      <div class="chapter-shell">
+        <div class="chapter-eyebrow"><span>02 / THE EXPERIENCE</span><span>REAL ROADMAP / NO SIMULATED TELEMETRY</span></div>
+        <div class="experience-heading"><p class="eyebrow">BEYOND A NORMAL MOD.</p><h2>EVERY CAR.<br><em>A STORY.</em></h2></div>
+        <div class="feature-stage">
+          <div class="feature-selector" id="feature-selector" role="tablist" aria-label="Torqz Garage planned features"></div>
+          <div class="feature-reveal" id="feature-reveal" role="tabpanel" tabindex="0" aria-live="polite">
+            <span class="feature-counter">01 / 06</span><h3>Feature spotlight</h3><span class="feature-status">Status: planned</span><p>Choose a feature to explore its real development status and intent.</p><span class="feature-disclaimer">CONCEPT PRESENTATION / NOT A WORKING FEATURE PREVIEW</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter build" id="build" data-chapter>
+      <div class="chapter-shell">
+        <div class="chapter-eyebrow"><span>03 / THE BUILD</span><span>VERIFIED DEVELOPMENT MILESTONES</span></div>
+        <div class="build-headline"><p class="eyebrow">BEHIND THE SCENES</p><h2>FROM<br>THE <em>GROUND.</em></h2></div>
+        <div id="milestone-list" class="milestone-list"></div>
+        <a class="inline-link" href="../mods/project-01.html">View Full Project Status <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="chapter journal" id="journal" data-chapter>
+      <div class="chapter-shell">
+        <div class="chapter-eyebrow"><span>04 / JOURNAL</span><span>REAL DEVELOPMENT UPDATES</span></div>
+        <div class="journal-heading"><span class="eyebrow">NOTHING FABRICATED. JUST THE BUILD.</span><h2>UNDER THE<br><em>HOOD.</em></h2></div>
+        <div class="journal-entries" id="journal-entries"></div>
+        <a class="inline-link" href="../updates.html">Read All Development Updates <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="chapter about" id="about" data-chapter>
+      <div class="chapter-shell closing">
+        <div class="chapter-eyebrow"><span>05 / THE CREATOR</span><span>INDEPENDENT BEAMNG.DRIVE MODDING</span></div>
+        <span class="closing-prefix">THIS IS JUST THE BEGINNING.</span>
+        <h2>THE NEXT<br>CHAPTER <em>STARTS HERE.</em></h2>
+        <p>Torqz Mods is an independent creator project. We're building, testing, learning, and sharing the actual progress—one stage at a time.</p>
+        <div class="closing-actions"><a class="button-primary" href="../updates.html">Follow the Build <span>↗</span></a><a class="button-quiet" href="../support.html">Support Center <span>↗</span></a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div><strong>TORQZ MODS</strong><span>ORIGINAL BEAMNG.DRIVE PROJECTS</span></div><p>Independent creator project. Not affiliated with BeamNG GmbH. V4 Night Circuit preview—existing pages remain V3 until the full rebuild is approved.</p><a href="#top">Back to top ↑</a></footer>
+</body></html>
