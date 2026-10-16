@@ -41,6 +41,7 @@ export const MODS = [
       { name: "In-game UI", status: "next" },
       { name: "Testing", status: "next" }
     ],
+    image: null,   // e.g. "assets/mods/torqz-garage.jpg" — a screenshot or banner, 16:9 looks best
     version: null,
     download: null
   }

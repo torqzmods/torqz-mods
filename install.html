@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Downloads & install | Torqz Mods</title>
+  <title>Install | Torqz Mods</title>
   <meta name="description" content="Download Torqz Mods for BeamNG.drive and install them in a few steps.">
-  <meta name="theme-color" content="#060a13">
+  <meta name="theme-color" content="#04070f">
   <link rel="canonical" href="https://torqzmods.github.io/torqz-mods/install.html">
-  <meta property="og:title" content="Downloads & install | Torqz Mods">
+  <meta property="og:title" content="Install | Torqz Mods">
   <meta property="og:description" content="Download Torqz Mods for BeamNG.drive and install them in a few steps.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://torqzmods.github.io/torqz-mods/assets/brand/torqz-logo.webp">
@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="css/site.css">
 </head>
 <body data-page="install">
+  <div class="backdrop" aria-hidden="true"></div>
   <header class="site-header" data-header></header>
   <main id="main">
     <section class="page-head">
@@ -37,13 +38,25 @@
     <section class="section">
       <div class="shell">
         <div class="section-head"><h2>Install a mod</h2><p>BeamNG.drive loads mods straight from their .zip file.</p></div>
-        <ol class="steps">
-          <li><div><h3>Download the .zip</h3><p>Grab the mod from the downloads list above. Keep it as a .zip and don't extract it.</p></div></li>
-          <li><div><h3>Open your BeamNG user folder</h3><p>In the BeamNG.drive launcher, choose <strong>Manage User Folder</strong>, then <strong>Open in Explorer</strong>.</p></div></li>
-          <li><div><h3>Go into the current version folder</h3><p>Open the folder named after your current game version (it's a version number). If there's no <code>mods</code> folder inside, create one.</p></div></li>
-          <li><div><h3>Drop the .zip into mods</h3><p>Drag the .zip file into the <code>mods</code> folder.</p></div></li>
-          <li><div><h3>Check it in-game</h3><p>Start BeamNG.drive and open the <strong>Mods Manager</strong>. The mod should be listed and turned on.</p></div></li>
-        </ol>
+        <div class="install-grid">
+          <ol class="steps">
+            <li class="glass"><div><h3>Download the .zip</h3><p>Grab the mod from the downloads list above. Keep it as a .zip and don't extract it.</p></div></li>
+            <li class="glass"><div><h3>Open your BeamNG user folder</h3><p>In the BeamNG.drive launcher, choose <strong>Manage User Folder</strong>, then <strong>Open in Explorer</strong>.</p></div></li>
+            <li class="glass"><div><h3>Go into your game version folder</h3><p>Open the folder named after your current game version (it's a version number). If there's no <code>mods</code> folder inside, create one.</p></div></li>
+            <li class="glass"><div><h3>Drop the .zip into mods</h3><p>Drag the .zip file into the <code>mods</code> folder.</p></div></li>
+            <li class="glass"><div><h3>Check it in-game</h3><p>Start BeamNG.drive and open the <strong>Mods Manager</strong>. The mod should be listed and turned on.</p></div></li>
+          </ol>
+          <aside class="tree-card glass">
+            <h3>Where the file goes</h3>
+            <p>Your folders should end up looking like this.</p>
+            <ul class="tree" aria-label="Folder layout">
+              <li class="folder">BeamNG.drive</li>
+              <li class="folder d1">your game version</li>
+              <li class="folder d2">mods</li>
+              <li class="zip d3">torqz-garage.zip <span class="here">here</span></li>
+            </ul>
+          </aside>
+        </div>
       </div>
     </section>
 
@@ -51,10 +64,10 @@
       <div class="shell">
         <div class="section-head"><h2>If something's not working</h2></div>
         <div class="faq">
-          <details><summary>The mod doesn't show up in the Mods Manager</summary><p>Make sure the .zip is directly inside the <code>mods</code> folder for your current game version, not in a subfolder and not extracted. Then restart the game.</p></details>
-          <details><summary>It shows up but doesn't do anything</summary><p>Open the Mods Manager and check the mod is turned on. If you have a lot of other mods, try turning them off to rule out a conflict.</p></details>
-          <details><summary>The game updated and the mod stopped working</summary><p>Game updates create a new version folder. Move the .zip into the <code>mods</code> folder of the new version, and check here for an updated release.</p></details>
-          <details><summary>I found a bug</summary><p>Tell me what you were doing when it happened and which version of the game you're on. Reach out through any of the links on the About page.</p></details>
+          <details class="glass"><summary>The mod doesn't show up in the Mods Manager</summary><p>Make sure the .zip is directly inside the <code>mods</code> folder for your current game version, not in a subfolder and not extracted. Then restart the game.</p></details>
+          <details class="glass"><summary>It shows up but doesn't do anything</summary><p>Open the Mods Manager and check the mod is turned on. If you have a lot of other mods, try turning them off to rule out a conflict.</p></details>
+          <details class="glass"><summary>The game updated and the mod stopped working</summary><p>Game updates create a new version folder. Move the .zip into the <code>mods</code> folder of the new version, and check here for an updated release.</p></details>
+          <details class="glass"><summary>I found a bug</summary><p>Tell me what you were doing when it happened and which version of the game you're on. Reach out through any of the links on the About page.</p></details>
         </div>
       </div>
     </section>
