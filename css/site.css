@@ -96,8 +96,9 @@ p { margin: 0 0 1em; }
   display: block; width: 34px; height: 34px; border-radius: 50%; overflow: hidden; flex: none;
   box-shadow: 0 0 0 1px rgba(56, 225, 255, 0.5), 0 0 18px rgba(56, 225, 255, 0.35);
 }
-/* the source logo is damaged along its bottom edge, so it's zoomed from the top to hide that */
-.brand-mark img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 0; transform: scale(1.18); transform-origin: 50% 30%; }
+.brand-mark img { width: 100%; height: 100%; object-fit: cover; }
+.wordmark { height: 46px; width: auto; }
+.brand { padding-left: 8px; }
 .brand-mark.lg { width: 52px; height: 52px; }
 nav { display: flex; gap: 4px; }
 nav a {
@@ -202,7 +203,7 @@ nav a[aria-current="page"] { color: var(--bg); background: var(--ink); }
 .car-art .car-glass { fill: rgba(56, 225, 255, 0.1); }
 .car-art .hubcap { stroke-width: 4; opacity: 0.7; }
 .mod-card:hover .car-art { transform: translateX(10px); }
-.media-logo { position: absolute; right: 16px; top: 14px; width: 48px; height: 48px; border-radius: 50%; object-fit: cover; object-position: 50% 0; opacity: 0.9; box-shadow: 0 0 20px rgba(56, 225, 255, 0.5); }
+.media-logo { position: absolute; right: 16px; top: 14px; width: 48px; height: 48px; border-radius: 50%; object-fit: cover; opacity: 0.9; box-shadow: 0 0 20px rgba(56, 225, 255, 0.5); }
 .mod-body { padding: 26px 28px 28px; display: flex; flex-direction: column; flex: 1; }
 .mod-project { color: var(--faint); font: 600 0.85rem var(--display); margin-bottom: 4px; }
 .mod-body h3 { font-size: 2rem; margin-bottom: 4px; }
@@ -310,7 +311,7 @@ a.social:hover { border-color: var(--edge-hi); color: var(--ink); transform: tra
 .site-footer { position: relative; z-index: 1; padding: 24px 0 32px; }
 .foot { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; border-radius: 22px; padding: 18px 22px; }
 .foot-brand { display: flex; align-items: center; gap: 14px; }
-.foot-brand .brand-mark { width: 40px; height: 40px; }
+.foot-brand .wordmark { height: 46px; }
 .foot-brand strong { font: 700 1.05rem var(--display); }
 .foot-brand p { color: var(--faint); font-size: 0.88rem; margin: 0; }
 .foot-links { display: flex; gap: 8px; }

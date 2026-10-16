@@ -35,9 +35,8 @@ function header() {
     <a class="skip" href="#main">Skip to content</a>
     <div class="nav-wrap">
       <div class="nav-pill glass">
-        <a class="brand" href="index.html" aria-label="Torqz Mods home">
-          <span class="brand-mark"><img src="assets/brand/torqz-logo.webp" alt="" width="34" height="34"></span>
-          <span>Torqz Mods</span>
+        <a class="brand" href="index.html">
+          <img class="wordmark" src="assets/brand/torqz-wordmark.svg" alt="Torqz Mods" width="160" height="46">
         </a>
         <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav"><span></span><span></span><span class="sr-only">Menu</span></button>
         <nav id="nav" aria-label="Main">
@@ -71,8 +70,8 @@ function footer() {
     <div class="shell">
       <div class="foot glass">
         <div class="foot-brand">
-          <span class="brand-mark"><img src="assets/brand/torqz-logo.webp" alt="" width="40" height="40"></span>
-          <div><strong>Torqz Mods</strong><p>Independent mods for BeamNG.drive. Not affiliated with BeamNG GmbH.</p></div>
+          <img class="wordmark" src="assets/brand/torqz-wordmark.svg" alt="Torqz Mods" width="150" height="43">
+          <div><p>Independent mods for BeamNG.drive. Not affiliated with BeamNG GmbH.</p></div>
         </div>
         <div class="foot-links">
           ${SOCIALS.map(([k, name]) => LINKS[k]
@@ -135,7 +134,7 @@ function carArt() {
 function media(mod) {
   return mod.image
     ? `<img src="${esc(mod.image)}" alt="${esc(mod.name)}" loading="lazy">`
-    : `<div class="media-art"><div class="media-grid"></div>${carArt()}<img class="media-logo" src="assets/brand/torqz-logo.webp" alt="" width="64" height="64"></div>`;
+    : `<div class="media-art"><div class="media-grid"></div>${carArt()}<img class="media-logo" src="assets/brand/torqz-icon.svg" alt="" width="64" height="64"></div>`;
 }
 
 function downloadButton(mod, small = false) {
@@ -194,7 +193,7 @@ function downloads() {
   if (!el) return;
   el.innerHTML = MODS.map((mod) => `
     <li class="glass">
-      <span class="brand-mark lg"><img src="${esc(mod.image || "assets/brand/torqz-logo.webp")}" alt="" width="52" height="52"></span>
+      <span class="brand-mark lg"><img src="${esc(mod.image || "assets/brand/torqz-icon.svg")}" alt="" width="52" height="52"></span>
       <div class="dl-info">
         <strong>${esc(mod.name)}</strong>
         <span>${mod.download ? (mod.version ? "Version " + esc(mod.version) : "Latest version") : `In development, ${progress(mod)}% built`}</span>
