@@ -96,28 +96,38 @@ function ring(pct, size = 132) {
 function liveCard() {
   const el = document.querySelector("[data-live]");
   if (!el) return;
-  const mod = MODS.find((m) => m.status === "In development") || MODS[0];
+  /* Feature whichever mod has the newest update; fall back to the one in development. */
+  const newest = UPDATES[0] && MODS.find((m) => m.name === UPDATES[0].mod);
+  const mod = newest || MODS.find((m) => m.status === "In development") || MODS[0];
   if (!mod) return;
-  const pct = progress(mod);
+  const released = mod.status === "Released";
+  const pct = released ? 100 : progress(mod);
   const step = currentStep(mod);
   const latest = UPDATES.find((u) => u.mod === mod.name);
+  const next = released ? MODS.find((m) => m.status === "In development") : null;
+  const big = released && mod.version ? "v" + esc(mod.version) : pct + "%";
+  const small = released ? "out now" : "built";
+  const sub = released
+    ? `${esc(mod.access)} download &middot; <strong>Version ${esc(mod.version || "")}</strong>`
+    : `Working on <strong>${esc(step.name)}</strong>`;
   el.innerHTML = `
     <div class="live-top">
       <span class="live-dot" aria-hidden="true"></span>
-      <span>Live build</span>
+      <span>${released ? "Latest release" : "Live build"}</span>
       <span class="status ${statusClass(mod.status)}">${esc(mod.status)}</span>
     </div>
     <div class="live-main">
-      <div class="ring-wrap">${ring(pct)}<div class="ring-label"><strong>${pct}%</strong><span>built</span></div></div>
+      <div class="ring-wrap">${ring(pct)}<div class="ring-label"><strong${released ? ' style="font-size:1.35rem"' : ""}>${big}</strong><span>${small}</span></div></div>
       <div>
         <h2>${esc(mod.name)}</h2>
-        <p>Working on <strong>${esc(step.name)}</strong></p>
+        <p>${sub}</p>
       </div>
     </div>
     <ol class="steps-mini">
       ${mod.milestones.map((m) => `<li class="ms-${m.status}"><span class="lamp" aria-hidden="true"></span>${esc(m.name)}</li>`).join("")}
     </ol>
-    ${latest ? `<a class="live-update" href="#updates"><span>Latest: ${fmtDate(latest.date)}</span>${esc(latest.title)}</a>` : ""}`;
+    ${latest ? `<a class="live-update" href="#updates"><span>Latest: ${fmtDate(latest.date)}</span>${esc(latest.title)}</a>` : ""}
+    ${next ? `<a class="live-update live-next" href="install.html"><span>Up next &middot; ${esc(next.access)}</span>${esc(next.name)}: ${esc(currentStep(next).name.toLowerCase())}, ${progress(next)}% built</a>` : ""}`;
   requestAnimationFrame(() => requestAnimationFrame(() => document.body.classList.add("is-loaded")));
 }
 
