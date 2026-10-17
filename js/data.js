@@ -36,7 +36,9 @@ export const MODS = [
       "Worn parts change how the car drives",
       "Spawn any garage car again with its exact parts and paint",
       "Crash and damage history with repair costs",
-      "Trip log and 13 milestones",
+      "Trip log and 19 milestones",
+      "Sell or retire a car and keep its history",
+      "Adjustable wear speed and \"due in\" service estimates",
       "Service history",
       "Car profile and owner info",
       "Neon in-game app with mini mode"
@@ -50,8 +52,8 @@ export const MODS = [
       { name: "Release", status: "done" }
     ],
     image: null,   // e.g. "assets/mods/torqz-garage.jpg" — a screenshot or banner, 16:9 looks best
-    version: "2.1.0",
-    download: "downloads/Torqz_Garage_2.1.0.zip"
+    version: "2.2.0",
+    download: "downloads/Torqz_Garage_2.2.0.zip"
   },
   {
     id: "torqz-garage-pro",
@@ -86,6 +88,12 @@ export const MODS = [
 
 /* UPDATES — newest first. */
 export const UPDATES = [
+  {
+    date: "2026-10-17",
+    mod: "Torqz Garage",
+    title: "Torqz Garage 2.2.0 is out",
+    text: "Sell or retire a car and keep its whole history in Past cars, set how fast parts wear, see roughly how many miles until each service, and check your garage totals. Six new milestones bring the total to 19. Your 2.1 save loads as it is. Free on the Downloads page."
+  },
   {
     date: "2026-10-16",
     mod: "Torqz Garage",
