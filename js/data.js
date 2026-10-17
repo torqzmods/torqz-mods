@@ -26,20 +26,21 @@ export const MODS = [
     status: "In development",
     tagline: "Your cars keep their history.",
     description:
-      "Persistent vehicle ownership for BeamNG.drive. Owned cars keep an identity across sessions, with mileage, driving time and service history building up the longer you drive them.",
+      "Own your cars in BeamNG.drive. Add any car to your garage and it keeps its miles, driving time, condition and service history, plus a profile you fill in yourself. Spawn it again later and it's recognized automatically.",
     features: [
-      "Persistent vehicle identity",
-      "Mileage tracking",
-      "Driving time per car",
-      "Garage storage",
-      "Service history"
+      "Recognizes your cars automatically",
+      "Mileage and driving time",
+      "Oil, tire, brake and filter wear",
+      "Service history",
+      "Car profile and owner info",
+      "Neon in-game app with mini mode"
     ],
     milestones: [
       { name: "Foundation", status: "done" },
-      { name: "Vehicle data", status: "now" },
-      { name: "Persistent garage", status: "next" },
-      { name: "In-game UI", status: "next" },
-      { name: "Testing", status: "next" }
+      { name: "Vehicle data", status: "done" },
+      { name: "Persistent garage", status: "done" },
+      { name: "In-game UI", status: "done" },
+      { name: "Testing", status: "now" }
     ],
     image: null,   // e.g. "assets/mods/torqz-garage.jpg" — a screenshot or banner, 16:9 looks best
     version: null,
@@ -49,6 +50,18 @@ export const MODS = [
 
 /* UPDATES — newest first. */
 export const UPDATES = [
+  {
+    date: "2026-10-16",
+    mod: "Torqz Garage",
+    title: "Torqz Garage 2.0: rebuilt from scratch",
+    text: "A brand-new in-game app, cars that are recognized when you spawn them again, oil, tire, brake and air filter wear with a service log, and a profile for every car. Now in testing."
+  },
+  {
+    date: "2026-10-16",
+    mod: "Torqz Garage",
+    title: "Add to Garage works in-game",
+    text: "The first car was added to a real garage, and its miles and driving time were saved while driving."
+  },
   {
     date: "2026-10-06",
     mod: "Torqz Garage",
