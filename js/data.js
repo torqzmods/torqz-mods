@@ -6,7 +6,7 @@
 
 /* Social links. Leave a link as "" and the site shows "Coming soon" instead of a dead link. */
 export const LINKS = {
-  discord: "",
+  discord: "https://discord.gg/3efxR7dF4n",
   youtube: "https://www.youtube.com/@itstorqz",
   tiktok: "https://www.tiktok.com/@torqz6",
   github: "https://github.com/torqzmods/torqz-mods",
