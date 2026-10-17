@@ -24,7 +24,7 @@ export const MODS = [
     id: "torqz-garage",
     name: "Torqz Garage",
     project: "Project 01",
-    status: "In development",
+    status: "Released",
     access: "Free",
     tagline: "Your cars keep their history.",
     description:
@@ -46,11 +46,12 @@ export const MODS = [
       { name: "Vehicle data", status: "done" },
       { name: "Persistent garage", status: "done" },
       { name: "In-game UI", status: "done" },
-      { name: "Testing", status: "now" }
+      { name: "Testing", status: "done" },
+      { name: "Release", status: "done" }
     ],
     image: null,   // e.g. "assets/mods/torqz-garage.jpg" — a screenshot or banner, 16:9 looks best
-    version: null,
-    download: null
+    version: "2.1.0",
+    download: "downloads/Torqz_Garage_2.1.0.zip"
   },
   {
     id: "torqz-garage-pro",
@@ -85,6 +86,12 @@ export const MODS = [
 
 /* UPDATES — newest first. */
 export const UPDATES = [
+  {
+    date: "2026-10-16",
+    mod: "Torqz Garage",
+    title: "Torqz Garage 2.1.0 is out",
+    text: "The first public release. Add your cars to a garage, spawn them again later, track miles, wear, crashes and trips, and earn milestones. Free to download on the Downloads page."
+  },
   {
     date: "2026-10-16",
     mod: "Torqz Garage Pro",
