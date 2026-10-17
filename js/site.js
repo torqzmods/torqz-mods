@@ -212,7 +212,7 @@ function downloads() {
       <span class="brand-mark lg"><img src="${esc(mod.image || "assets/brand/torqz-icon.svg")}" alt="" width="52" height="52"></span>
       <div class="dl-info">
         <strong>${esc(mod.name)}</strong>
-        <span>${mod.download ? (mod.version ? "Version " + esc(mod.version) : "Latest version") : `${mod.access === "Patreon" ? "For Patreon members. " : ""}In development, ${progress(mod)}% built`}</span>
+        <span>${mod.download ? (mod.version ? "Version " + esc(mod.version) : "Latest version") : mod.status === "Released" ? `${mod.access === "Patreon" ? "For Patreon members. " : ""}${mod.version ? "Version " + esc(mod.version) : "Out now"}` : `${mod.access === "Patreon" ? "For Patreon members. " : ""}In development, ${progress(mod)}% built`}</span>
       </div>
       ${downloadButton(mod)}
     </li>`).join("");
