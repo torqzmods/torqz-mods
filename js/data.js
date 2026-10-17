@@ -59,7 +59,7 @@ export const MODS = [
     id: "torqz-garage-pro",
     name: "Torqz Garage Pro",
     project: "Project 02",
-    status: "In development",
+    status: "Released",
     access: "Patreon",
     tagline: "The full garage, no limits.",
     description:
@@ -77,17 +77,23 @@ export const MODS = [
     milestones: [
       { name: "Foundation", status: "done" },
       { name: "Pro features", status: "done" },
-      { name: "Testing", status: "now" },
-      { name: "Patreon launch", status: "next" }
+      { name: "Testing", status: "done" },
+      { name: "Patreon launch", status: "done" }
     ],
     image: null,
-    version: null,
+    version: "1.0.0",
     download: null
   }
 ];
 
 /* UPDATES — newest first. */
 export const UPDATES = [
+  {
+    date: "2026-10-17",
+    mod: "Torqz Garage Pro",
+    title: "Torqz Garage Pro 1.0.0 is out on Patreon",
+    text: "The full garage, no limits: a money system, nine wearing parts, tune presets, daily and weekly challenges, stats and graphs, car cards, five themes, unlimited cars and named garages. Available now for Torqz Mods Patreon members."
+  },
   {
     date: "2026-10-17",
     mod: "Torqz Garage",
