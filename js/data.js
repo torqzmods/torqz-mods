@@ -89,7 +89,7 @@ export const UPDATES = [
     date: "2026-10-16",
     mod: "Torqz Garage Pro",
     title: "Torqz Garage Pro is in testing",
-    text: "The Patreon version is built: a money system, five extra wearing parts, tune presets, daily challenges, stats and graphs, car cards and themes. The free version stays, with up to 3 cars."
+    text: "Project 02 is built: a separate Patreon mod with a money system, five extra wearing parts, tune presets, daily challenges, stats and graphs, car cards and themes. The free Torqz Garage stays as it is."
   },
   {
     date: "2026-10-16",
