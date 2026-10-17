@@ -191,7 +191,7 @@ nav a[aria-current="page"] { color: var(--bg); background: var(--ink); }
 .section-head p { color: var(--muted); margin: 0; max-width: 52ch; }
 
 /* ---------- Mod cards ---------- */
-.mod-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 22px; }
+.mod-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
 .mod-card { border-radius: 24px; overflow: hidden; display: flex; flex-direction: column; transition: transform 0.35s var(--ease), border-color 0.3s; }
 .mod-card.glass:hover { transform: translateY(-4px); border-color: rgba(56, 225, 255, 0.3); }
 .mod-media { position: relative; aspect-ratio: 16 / 8; overflow: hidden; background: #070c1a; border-bottom: 1px solid var(--edge); }

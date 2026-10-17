@@ -138,6 +138,11 @@ function media(mod) {
 }
 
 function downloadButton(mod, small = false) {
+  if (mod.access === "Patreon" && !mod.download) {
+    return LINKS.patreon
+      ? `<a class="btn primary${small ? " sm" : ""}" href="${esc(LINKS.patreon)}" target="_blank" rel="noopener">Join on Patreon</a>`
+      : `<span class="btn ghost is-off${small ? " sm" : ""}" aria-disabled="true">Patreon coming soon</span>`;
+  }
   return mod.download
     ? `<a class="btn primary${small ? " sm" : ""}" href="${esc(mod.download)}">Download${mod.version ? " v" + esc(mod.version) : ""}</a>`
     : `<span class="btn ghost is-off${small ? " sm" : ""}" aria-disabled="true">Not released yet</span>`;
@@ -153,7 +158,7 @@ function mods() {
     <article class="mod-card glass spot" id="${esc(mod.id)}">
       <div class="mod-media">${media(mod)}<span class="status ${statusClass(mod.status)}">${esc(mod.status)}</span></div>
       <div class="mod-body">
-        ${mod.project ? `<span class="mod-project">${esc(mod.project)}</span>` : ""}
+        ${mod.project ? `<span class="mod-project">${esc(mod.project)}${mod.access === "Patreon" ? " · Patreon" : ""}</span>` : ""}
         <h3>${esc(mod.name)}</h3>
         <p class="mod-tag">${esc(mod.tagline)}</p>
         <p>${esc(mod.description)}</p>
@@ -196,7 +201,7 @@ function downloads() {
       <span class="brand-mark lg"><img src="${esc(mod.image || "assets/brand/torqz-icon.svg")}" alt="" width="52" height="52"></span>
       <div class="dl-info">
         <strong>${esc(mod.name)}</strong>
-        <span>${mod.download ? (mod.version ? "Version " + esc(mod.version) : "Latest version") : `In development, ${progress(mod)}% built`}</span>
+        <span>${mod.download ? (mod.version ? "Version " + esc(mod.version) : "Latest version") : `${mod.access === "Patreon" ? "For Patreon members. " : ""}In development, ${progress(mod)}% built`}</span>
       </div>
       ${downloadButton(mod)}
     </li>`).join("");

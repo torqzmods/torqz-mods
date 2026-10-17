@@ -9,7 +9,8 @@ export const LINKS = {
   discord: "",
   youtube: "",
   tiktok: "",
-  github: "https://github.com/torqzmods/torqz-mods"
+  github: "https://github.com/torqzmods/torqz-mods",
+  patreon: ""   // paste your Patreon page link here when it's ready
 };
 
 /*
@@ -24,6 +25,7 @@ export const MODS = [
     name: "Torqz Garage",
     project: "Project 01",
     status: "In development",
+    access: "Free",
     tagline: "Your cars keep their history.",
     description:
       "Own your cars in BeamNG.drive. Add any car to your garage and it keeps its miles, driving time, condition and service history, plus a profile you fill in yourself. Spawn it again later and it's recognized automatically.",
@@ -49,11 +51,46 @@ export const MODS = [
     image: null,   // e.g. "assets/mods/torqz-garage.jpg" — a screenshot or banner, 16:9 looks best
     version: null,
     download: null
+  },
+  {
+    id: "torqz-garage-pro",
+    name: "Torqz Garage Pro",
+    project: "Project 02",
+    status: "In development",
+    access: "Patreon",
+    tagline: "The full garage, no limits.",
+    description:
+      "Everything in Torqz Garage, plus a money system, five more wearing parts, tune presets, daily challenges, stats and graphs, shareable car cards and themes. Built for Torqz Mods Patreon members.",
+    features: [
+      "Earn money and pay for services and repairs",
+      "Engine, transmission, clutch, suspension and exhaust wear",
+      "Tune presets with best 0-60 and top speed",
+      "Daily and weekly challenges with a streak",
+      "Stats, fuel economy and condition graphs",
+      "Shareable neon car cards and a photo log",
+      "Five color themes",
+      "Unlimited cars, named garages, daily backups"
+    ],
+    milestones: [
+      { name: "Foundation", status: "done" },
+      { name: "Pro features", status: "done" },
+      { name: "Testing", status: "now" },
+      { name: "Patreon launch", status: "next" }
+    ],
+    image: null,
+    version: null,
+    download: null
   }
 ];
 
 /* UPDATES — newest first. */
 export const UPDATES = [
+  {
+    date: "2026-10-16",
+    mod: "Torqz Garage Pro",
+    title: "Torqz Garage Pro is in testing",
+    text: "The Patreon version is built: a money system, five extra wearing parts, tune presets, daily challenges, stats and graphs, car cards and themes. The free version stays, with up to 3 cars."
+  },
   {
     date: "2026-10-16",
     mod: "Torqz Garage",
