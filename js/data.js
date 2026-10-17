@@ -31,6 +31,10 @@ export const MODS = [
       "Recognizes your cars automatically",
       "Mileage and driving time",
       "Oil, tire, brake and filter wear",
+      "Worn parts change how the car drives",
+      "Spawn any garage car again with its exact parts and paint",
+      "Crash and damage history with repair costs",
+      "Trip log and 13 milestones",
       "Service history",
       "Car profile and owner info",
       "Neon in-game app with mini mode"
@@ -50,6 +54,12 @@ export const MODS = [
 
 /* UPDATES — newest first. */
 export const UPDATES = [
+  {
+    date: "2026-10-16",
+    mod: "Torqz Garage",
+    title: "Torqz Garage 2.1: spawn, crashes, trips and wear that matters",
+    text: "Spawn any car from your garage with its exact parts and paint. Crashes are logged with a repair cost, every drive is saved in a trip log, and 13 milestones unlock as you rack up miles. Worn oil, tires and brakes now change how the car drives. Tested in-game."
+  },
   {
     date: "2026-10-16",
     mod: "Torqz Garage",
