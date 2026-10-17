@@ -83,11 +83,45 @@ export const MODS = [
     image: null,
     version: null,
     download: null
+  },
+  {
+    id: "torqz-dash",
+    name: "Torqz Dash",
+    project: "Project 03",
+    status: "Released",
+    access: "Free",
+    tagline: "Your whole drive, at a glance.",
+    description:
+      "A clean neon dashboard for BeamNG.drive. Speed, gear, RPM with a shift light, fuel, temperatures and warning lights in one small app that works with any car. It also keeps a trip meter and scales to any size.",
+    features: [
+      "Big speed readout in mph or km/h",
+      "Gear and an RPM bar with a redline and shift light",
+      "Fuel level, coolant and oil temperature",
+      "Signals, headlights, ABS, traction and stability lights",
+      "Trip meter saved between sessions",
+      "Full, compact and mini sizes, four colors"
+    ],
+    milestones: [
+      { name: "Foundation", status: "done" },
+      { name: "Dashboard", status: "done" },
+      { name: "Testing", status: "done" },
+      { name: "Release", status: "done" }
+    ],
+    image: null,
+    art: "gauge",
+    version: "1.0.2",
+    download: "downloads/Torqz_Dash_1.0.2.zip"
   }
 ];
 
 /* UPDATES — newest first. */
 export const UPDATES = [
+  {
+    date: "2026-10-17",
+    mod: "Torqz Dash",
+    title: "Torqz Dash 1.0 is out",
+    text: "Project 03 is a free dashboard for BeamNG.drive: speed, gear, RPM with a shift light, fuel, temperatures, warning lights and a trip meter. It works with any car and scales to any size. Free on the Downloads page."
+  },
   {
     date: "2026-10-17",
     mod: "Torqz Garage",

@@ -142,10 +142,26 @@ function carArt() {
   </svg>`;
 }
 
+function gaugeArt() {
+  const ticks = [];
+  for (let i = 0; i <= 12; i++) {
+    const a = (Math.PI * (200 - i * 220 / 12)) / 180, r1 = 118, r2 = i % 3 === 0 ? 100 : 108;
+    ticks.push(`<path d="M${(400 + Math.cos(a) * r1).toFixed(1)} ${(165 - Math.sin(a) * r1).toFixed(1)}L${(400 + Math.cos(a) * r2).toFixed(1)} ${(165 - Math.sin(a) * r2).toFixed(1)}"/>`);
+  }
+  return `<svg class="car-art gauge-art" viewBox="0 0 800 300" aria-hidden="true">
+    <path d="M286 245A150 150 0 1 1 514 245"/>
+    ${ticks.join("")}
+    <path class="gauge-needle" d="M400 165L470 105"/>
+    <circle class="hubcap" cx="400" cy="165" r="12"/>
+    <rect x="170" y="268" width="460" height="14" rx="7"/>
+    <path class="gauge-fill" d="M178 275H430"/>
+  </svg>`;
+}
+
 function media(mod) {
   return mod.image
     ? `<img src="${esc(mod.image)}" alt="${esc(mod.name)}" loading="lazy">`
-    : `<div class="media-art"><div class="media-grid"></div>${carArt()}<img class="media-logo" src="assets/brand/torqz-icon.svg" alt="" width="64" height="64"></div>`;
+    : `<div class="media-art"><div class="media-grid"></div>${mod.art === "gauge" ? gaugeArt() : carArt()}<img class="media-logo" src="assets/brand/torqz-icon.svg" alt="" width="64" height="64"></div>`;
 }
 
 function downloadButton(mod, small = false) {
