@@ -7,10 +7,10 @@
 /* Social links. Leave a link as "" and the site shows "Coming soon" instead of a dead link. */
 export const LINKS = {
   discord: "",
-  youtube: "",
-  tiktok: "",
+  youtube: "https://www.youtube.com/@itstorqz",
+  tiktok: "https://www.tiktok.com/@torqz6",
   github: "https://github.com/torqzmods/torqz-mods",
-  patreon: ""   // paste your Patreon page link here when it's ready
+  patreon: "https://www.patreon.com/cw/Torqz"
 };
 
 /*

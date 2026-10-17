@@ -17,7 +17,8 @@ const ICON = {
   discord: '<path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v8a2.5 2.5 0 0 1-2.5 2.5H11l-4.5 3.5V17h0A2.5 2.5 0 0 1 4 14.5z"/><circle cx="9" cy="10.5" r="1"/><circle cx="15" cy="10.5" r="1"/>',
   youtube: '<rect x="3" y="5.5" width="18" height="13" rx="3.5"/><path d="M10.5 9.5v5l4-2.5z"/>',
   tiktok: '<path d="M9 18.5a3 3 0 1 1 0-6"/><path d="M12 4v11.5"/><path d="M12 4c.5 2.5 2.5 4 5 4"/>',
-  github: '<path d="M8.5 8 4.5 12l4 4"/><path d="M15.5 8l4 4-4 4"/><path d="M13.5 6l-3 12"/>'
+  github: '<path d="M8.5 8 4.5 12l4 4"/><path d="M15.5 8l4 4-4 4"/><path d="M13.5 6l-3 12"/>',
+  patreon: '<path d="M12 19.5s-7-4.3-7-9.2A3.8 3.8 0 0 1 12 8a3.8 3.8 0 0 1 7 2.3c0 4.9-7 9.2-7 9.2z"/>'
 };
 const icon = (k) => `<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">${ICON[k]}</svg>`;
 
@@ -60,7 +61,7 @@ const SOCIALS = [
   ["discord", "Discord", "Chat, test builds and bug reports"],
   ["youtube", "YouTube", "Build videos and showcases"],
   ["tiktok", "TikTok", "Short clips from the garage"],
-  ["github", "GitHub", "This website's code"]
+  ["patreon", "Patreon", "Support Torqz Mods"]
 ];
 
 function footer() {
